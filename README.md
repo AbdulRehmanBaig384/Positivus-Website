@@ -1,7 +1,4 @@
-Here’s an updated version with bold headings for your Positivus website README.md:
-
-
----
+<img width="1887" height="892" alt="image" src="https://github.com/user-attachments/assets/de569709-d43c-4bb9-86f9-b5189a11f3d9" />
 
 Positivus
 
