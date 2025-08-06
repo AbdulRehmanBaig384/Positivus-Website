@@ -70,11 +70,9 @@ document.querySelectorAll("a.button, .nav-button a").forEach(btn => {
 });
 
 const accordions = document.querySelectorAll(".accordion-button");
-
 accordions.forEach(button => {
   button.addEventListener("click", () => {
     const parent = button.closest(".accordion-item");
-
     accordions.forEach(btn => {
       const item = btn.closest(".accordion-item");
       if (item !== parent) {
@@ -99,10 +97,6 @@ window.addEventListener("scroll", () => {
 scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
-// =========================
-// ACTIVE NAV LINK HIGHLIGHT ON SCROLL
-// =========================
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav_element a");
 
@@ -126,13 +120,6 @@ window.addEventListener("scroll", () => {
 });
 
 console.log("Welcome to Positivus 🌐 — JS Loaded Successfully!");
-
-
-
-
-// =====================
-// Animate Background Circles
-// =====================
 gsap.to(".circle1", {
   duration: 20,
   x: 100,
@@ -158,22 +145,12 @@ gsap.to(".circle3", {
   ease: "sine.inOut"
 });
 
-
-
-
-// ==========================
-// GSAP Animations
-// ==========================
-
-// Nav animation on page load
 gsap.from(".navbar", {
   y: -80,
   opacity: 0,
   duration: 1,
   ease: "power4.out"
 });
-
-// Hero Section Text Slide + Image Fade
 gsap.from(".hero h1", {
   x: -100,
   opacity: 0,
@@ -199,8 +176,6 @@ gsap.from(".hero-section img", {
   duration: 1,
   delay: 0.5
 });
-
-// Services Cards Scroll Animation
 gsap.utils.toArray(".services-card").forEach((card, i) => {
   gsap.from(card, {
     scrollTrigger: {
@@ -215,8 +190,6 @@ gsap.utils.toArray(".services-card").forEach((card, i) => {
     ease: "power2.out"
   });
 });
-
-// Accordion Animation
 gsap.utils.toArray(".accordion-item").forEach((item, i) => {
   gsap.from(item, {
     scrollTrigger: {
@@ -231,7 +204,6 @@ gsap.utils.toArray(".accordion-item").forEach((item, i) => {
   });
 });
 
-// Logo section brand fade-in
 gsap.from(".logo-section img", {
   scrollTrigger: {
     trigger: ".logo-section",
@@ -242,8 +214,6 @@ gsap.from(".logo-section img", {
   duration: 1,
   stagger: 0.2
 });
-
-// Contact Form Animation
 gsap.from(".contact-us form", {
   scrollTrigger: {
     trigger: ".contact-us form",
