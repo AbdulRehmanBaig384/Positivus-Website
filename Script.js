@@ -1,11 +1,9 @@
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const mobileMenu = document.getElementById("mobile-menu");
 const hamburgerCross = document.getElementById("hamburger-cross");
-
 hamburgerMenu.addEventListener("click", () => {
   mobileMenu.style.display = "block";
 });
-
 hamburgerCross.addEventListener("click", () => {
   mobileMenu.style.display = "none";
 });
@@ -50,9 +48,6 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
   });
 });
 
-// =========================
-// DARK MODE TOGGLE (Optional button required in HTML)
-// =========================
 const darkModeBtn = document.createElement("button");
 darkModeBtn.textContent = "Toggle Dark Mode";
 darkModeBtn.className = "btn btn-dark position-fixed bottom-0 end-0 m-4";
@@ -63,9 +58,7 @@ darkModeBtn.addEventListener("click", () => {
   document.body.classList.toggle("text-white");
 });
 
-// =========================
-// BUTTON HOVER ANIMATION (Optional)
-// =========================
+
 document.querySelectorAll("a.button, .nav-button a").forEach(btn => {
   btn.addEventListener("mouseenter", () => {
     btn.style.transform = "scale(1.05)";
@@ -76,9 +69,6 @@ document.querySelectorAll("a.button, .nav-button a").forEach(btn => {
   });
 });
 
-// =========================
-// ACCORDION AUTO COLLAPSE LOGIC
-// =========================
 const accordions = document.querySelectorAll(".accordion-button");
 
 accordions.forEach(button => {
@@ -95,9 +85,7 @@ accordions.forEach(button => {
   });
 });
 
-// =========================
-// SCROLL TO TOP BUTTON
-// =========================
+
 const scrollBtn = document.createElement("button");
 scrollBtn.innerHTML = "↑";
 scrollBtn.className = "btn btn-primary position-fixed bottom-0 start-0 m-4";
@@ -137,9 +125,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// =========================
-// EXTRA: LOG SITE VISIT TO CONSOLE
-// =========================
 console.log("Welcome to Positivus 🌐 — JS Loaded Successfully!");
 
 
