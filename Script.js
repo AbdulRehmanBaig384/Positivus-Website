@@ -1,6 +1,3 @@
-// =========================
-// MOBILE MENU TOGGLE
-// =========================
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const mobileMenu = document.getElementById("mobile-menu");
 const hamburgerCross = document.getElementById("hamburger-cross");
@@ -13,9 +10,6 @@ hamburgerCross.addEventListener("click", () => {
   mobileMenu.style.display = "none";
 });
 
-// =========================
-// CONTACT FORM SUBMISSION (Mock)
-// =========================
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function (e) {
@@ -32,9 +26,6 @@ form.addEventListener("submit", function (e) {
   }
 });
 
-// =========================
-// NEWSLETTER SUBSCRIPTION (Mock)
-// =========================
 const subscriptionButton = document.querySelector('.subscription input[type="submit"]');
 subscriptionButton.addEventListener("click", function () {
   const emailInput = document.querySelector('.subscription input[type="email"]');
@@ -47,10 +38,6 @@ subscriptionButton.addEventListener("click", function () {
     alert("Please enter a valid email.");
   }
 });
-
-// =========================
-// SMOOTH SCROLL FOR NAV LINKS
-// =========================
 document.querySelectorAll("a[href^='#']").forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     if (this.getAttribute("href") !== "#") {
